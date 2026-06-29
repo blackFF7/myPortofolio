@@ -1,9 +1,26 @@
 // Smooth scroll behavior for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+const navLinks = document.querySelectorAll('a[href^="#"]');
+navLinks.forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
-        if (href !== '#') {
+        if (href && href.startsWith('#') && href.length > 1) {
             e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                const offset = 90;
+                const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }
+        }
+    });
+});
+
+// Close mobile menu when link clicked (optional)
+navLinks.forEach(anchor => {
+    anchor.addEventListener('click', () => {
+        const navMenu = document.querySelector('.nav-menu');
+        if (navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
         }
     });
 });
@@ -58,12 +75,12 @@ const animateCounters = () => {
     
     counters.forEach(counter => {
         const updateCount = () => {
-            const target = +counter.getAttribute('data-target') || +counter.innerText;
-            const count = +counter.innerText;
-            const increment = target / speed;
+            const target = parseInt(counter.getAttribute('data-target'), 10) || parseInt(counter.innerText.replace(/\D/g, ''), 10) || 0;
+            const count = parseInt(counter.innerText.replace(/\D/g, ''), 10) || 0;
+            const increment = Math.max(1, Math.floor(target / speed));
             
             if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
+                counter.innerText = Math.min(target, count + increment);
                 setTimeout(updateCount, 10);
             } else {
                 counter.innerText = target;
@@ -94,4 +111,4 @@ if (mobileMenuButton) {
     });
 }
 
-console.log('Portfolio loaded successfully! 🚀');
+console.log('Portfolio loaded successfully!');

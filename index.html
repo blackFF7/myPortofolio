@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackzen - Développeur Créatif</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Header -->
@@ -16,6 +16,8 @@
                 <span class="logo-text">BLACKZEN</span>
             </div>
             <nav class="nav-menu">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#vision" class="nav-link">Vision</a>
                 <a href="#about" class="nav-link">À Propos</a>
                 <a href="#skills" class="nav-link">Compétences</a>
                 <a href="#projects" class="nav-link">Projets</a>
@@ -25,19 +27,45 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="accueil" class="hero occupy-page">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">Créateur de Solutions</h1>
-                <h2 class="hero-subtitle">Développement Web & Design Technologique</h2>
-                <p class="hero-description">Transforme vos idées en expériences numériques captivantes</p>
+                <div class="eyebrow"><span class="material-icons-outlined">smart_toy</span> Développeur Symfony • Next.js • Docker</div>
+                <h1 class="hero-title">Je conçois des applications web performantes et immersives.</h1>
+                <div class="hero-subtitle">Architecture, conteneurs, interfaces et déploiement live.</div>
+                <div class="hero-anim">
+                    <span class="hero-anim-label">Ma stack :</span>
+                    <div class="hero-text-loop">
+                        <span class="loop-item">Symfony → APIs robustes</span>
+                        <span class="loop-item">Next.js → SSR & sites rapides</span>
+                        <span class="loop-item">Docker → environnements reproductibles</span>
+                    </div>
+                </div>
+                <p class="hero-description">Je transforme des projets complexes en interfaces élégantes, avec un style technique et animé inspiré du cyber design.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                    <a href="#expertise" class="btn btn-primary">Voir mon expertise</a>
+                    <a href="#contact" class="btn btn-secondary">Discutons du projet</a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="geometric-shape"></div>
+                <div class="hero-card">
+                    <div class="hero-globe"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="feature-page occupy-page">
+        <div class="feature-panel">
+            <div class="feature-topline">Vision technique</div>
+            <h2>Un univers cybernétique pour vos applications métiers.</h2>
+            <p>Design sombre, lignes lumineuses et structures modernes pour mettre en valeur votre expertise Symfony, Next.js, Docker et Linux dans un environnement professionnel.</p>
+            <div class="feature-chips">
+                <span class="feature-chip">Architecture</span>
+                <span class="feature-chip">Conteneurs</span>
+                <span class="feature-chip">Performance</span>
+                <span class="feature-chip">Sécurité</span>
             </div>
         </div>
     </section>
@@ -48,20 +76,20 @@
             <h2 class="section-title">À Propos</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Je suis un développeur passionné par la création d'interfaces modernes et performantes. Avec une expertise en technologies web contemporaines, je crée des solutions innovantes qui allient esthétique et fonctionnalité.</p>
-                    <p>Mon approche combine la rigueur technique avec une vision créative pour livrer des projets qui dépassent les attentes.</p>
+                    <p>Je suis un développeur Symfony / Next.js spécialisé dans les solutions web modernes, conteneurisées et maintenables.</p>
+                    <p>Mon travail se concentre sur la qualité de code, l'architecture évolutive et la livraison d'applications qui fonctionnent en production.</p>
                 </div>
                 <div class="stats">
                     <div class="stat-item">
-                        <h3 class="stat-number">50+</h3>
+                        <h3 class="stat-number" data-target="50">0</h3>
                         <p class="stat-label">Projets Complétés</p>
                     </div>
                     <div class="stat-item">
-                        <h3 class="stat-number">30+</h3>
+                        <h3 class="stat-number" data-target="30">0</h3>
                         <p class="stat-label">Clients Satisfaits</p>
                     </div>
                     <div class="stat-item">
-                        <h3 class="stat-number">5+</h3>
+                        <h3 class="stat-number" data-target="5">0</h3>
                         <p class="stat-label">Années d'Expérience</p>
                     </div>
                 </div>
@@ -76,53 +104,40 @@
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
+                        <span class="material-icons-outlined">settings</span>
                     </div>
-                    <h3>Frontend</h3>
+                    <h3>Symfony</h3>
                     <ul class="skill-list">
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript / TypeScript</li>
-                        <li>React / Vue.js</li>
-                        <li>Responsive Design</li>
+                        <li>Architecture MVC</li>
+                        <li>API REST & GraphQL</li>
+                        <li>Doctrine / MySQL</li>
+                        <li>Sécurité & authentification</li>
                     </ul>
                 </div>
 
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="fab fa-node-js"></i>
+                        <span class="material-icons-outlined">rocket_launch</span>
                     </div>
-                    <h3>Backend</h3>
+                    <h3>Next.js</h3>
                     <ul class="skill-list">
-                        <li>Node.js / Express</li>
-                        <li>Bases de Données</li>
-                        <li>REST APIs</li>
-                        <li>Authentification</li>
+                        <li>SSR / SSG / ISR</li>
+                        <li>React + TypeScript</li>
+                        <li>SEO & performance</li>
+                        <li>Intégration API headless</li>
                     </ul>
                 </div>
 
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="fab fa-figma"></i>
+                        <span class="material-icons-outlined">cloud</span>
                     </div>
-                    <h3>Design</h3>
+                    <h3>Docker</h3>
                     <ul class="skill-list">
-                        <li>UI/UX Design</li>
-                        <li>Figma / Adobe</li>
-                        <li>Prototypage</li>
-                        <li>Brand Identity</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h3>Outils & DevOps</h3>
-                    <ul class="skill-list">
-                        <li>Git / GitHub</li>
-                        <li>Docker</li>
-                        <li>CI/CD</li>
-                        <li>Linux</li>
+                        <li>Dockerfile & Compose</li>
+                        <li>Environnements multi-services</li>
+                        <li>Déploiement conteneurisé</li>
+                        <li>CI/CD Docker & tests</li>
                     </ul>
                 </div>
             </div>
@@ -135,42 +150,49 @@
             <h2 class="section-title">Projets Récents</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #0f172a 0%, #111827 100%);">
+                        <img src="image/portail image.jfif" class="project-image">
+                    </div>
                     <div class="project-content">
-                        <h3>E-Commerce Moderne</h3>
-                        <p>Plateforme de vente en ligne avec panier dynamique et système de paiement intégré.</p>
+                        <h3>Portail Client Symfony</h3>
+                        <p>Application métier sécurisée avec gestion des utilisateurs, API REST et tableau de bord de reporting.</p>
                         <div class="project-tags">
+                            <span class="tag">Symfony</span>
+                            <span class="tag">API</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #0f172a 0%, #111827 100%);">
+                        <img src="image/site corporate.jfif" class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Site Corporate Next.js</h3>
+                        <p>Site performant avec SSR, génération statique, optimisation SEO et intégration d'un CMS headless.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
                             <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                        <a href="#" class="project-link">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                    <div class="project-content">
-                        <h3>Dashboard Analytics</h3>
-                        <p>Application de visualisation de données en temps réel avec graphiques interactifs.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">D3.js</span>
                             <span class="tag">TypeScript</span>
+                            <span class="tag">SEO</span>
                         </div>
                         <a href="#" class="project-link">Voir le projet →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #0f172a 0%, #111827 100%);">
+                        <img src="image/docker.jfif" class="project-image"></div>
                     <div class="project-content">
-                        <h3>Réseau Social</h3>
-                        <p>Plateforme communautaire avec système de notifications et messagerie en temps réel.</p>
+                        <h3>Microservices Docker</h3>
+                        <p>Infrastructure conteneurisée avec services backend, base de données et déploiement sur Linux.</p>
                         <div class="project-tags">
-                            <span class="tag">Firebase</span>
-                            <span class="tag">React Native</span>
-                            <span class="tag">WebSocket</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Monitoring</span>
                         </div>
                         <a href="#" class="project-link">Voir le projet →</a>
                     </div>
@@ -187,19 +209,19 @@
                 <p class="contact-description">Vous avez un projet en tête ? Parlons-en !</p>
                 <div class="contact-methods">
                     <a href="mailto:fandrbh@gmail.com" class="contact-card">
-                        <i class="fas fa-envelope"></i>
+                        <span class="material-icons-outlined">email</span>
                         <h3>Email</h3>
                         <p>fandrbh@gmail.com</p>
                     </a>
-                    <a href="https://github.com/blackFF7" target="_blank" class="contact-card">
-                        <i class="fab fa-github"></i>
+                    <a href="https://github.com/blackFF7" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <span class="material-icons-outlined">code</span>
                         <h3>GitHub</h3>
                         <p>@blackFF7</p>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" class="contact-card">
-                        <i class="fab fa-linkedin"></i>
-                        <h3>LinkedIn</h3>
-                        <p>Mon Profil</p>
+                    <a href="https://wa.me/2613825658" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <span class="material-icons-outlined">chat</span>
+                        <h3>WhatsApp</h3>
+                        <p>+261 38 256 58</p>
                     </a>
                 </div>
             </div>
@@ -211,73 +233,13 @@
         <div class="footer-content">
             <p>&copy; 2026 Blackzen. Tous droits réservés.</p>
             <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/blackFF7" target="_blank" rel="noopener noreferrer"><span class="material-icons-outlined">code</span></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><span class="material-icons-outlined">work</span></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><span class="material-icons-outlined">share</span></a>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
-</html>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet">
-            <div class="listP">
-                <div class="P1">
-                    <h4>Titre projet</h4>
-                    <div class="descripionP">
-                        <ul>
-                            <li class="dP">Lorem, ipsum dolor.</li>
-                            <li class="dP">Lorem, ipsum dolor.</li>
-                            <li class="dP">Lorem, ipsum dolor.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="P1">
-                    <h4>Titre projet</h4>
-                    <div class="descripionP">
-                        <ul>
-                            <li class="dP">Lorem, ipsum dolor.</li>
-                            <li class="dP">Lorem, ipsum dolor.</li>
-                            <li class="dP">Lorem, ipsum dolor.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="P1">
-                    <h4>Titre projet</h4>
-                    <div class="descripionP">
-                        <ul>
-                            <li class="dP">Lorem, ipsum dolor.</li>
-                            <li class="dP">Lorem, ipsum dolor.</li>
-                            <li class="dP">Lorem, ipsum dolor.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact">
-            <div class="listCon">
-                <div class="Con1">
-                    <h4><span></span>Phone</h4>
-                    <h3>038 25 595 56</h3>
-                </div>
-                <div class="Con1">
-                    <h4><span></span>Twitter</h4>
-                    <h3>Lorem, ipsum.</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        
-    </footer>
-
-    <script src="script/index.js" defer></script>
 </body>
 </html>
