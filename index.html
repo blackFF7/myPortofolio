@@ -1,13 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Blackzen - Développeur Créatif</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-   <form action="" method="get">
-        <input type="color">
-   </form>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">▟</span>
+                <span class="logo-text">BLACKZEN</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link">À Propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Créateur de Solutions</h1>
+                <h2 class="hero-subtitle">Développement Web & Design Technologique</h2>
+                <p class="hero-description">Transforme vos idées en expériences numériques captivantes</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="geometric-shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Je suis un développeur passionné par la création d'interfaces modernes et performantes. Avec une expertise en technologies web contemporaines, je crée des solutions innovantes qui allient esthétique et fonctionnalité.</p>
+                    <p>Mon approche combine la rigueur technique avec une vision créative pour livrer des projets qui dépassent les attentes.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">50+</h3>
+                        <p class="stat-label">Projets Complétés</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">30+</h3>
+                        <p class="stat-label">Clients Satisfaits</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">5+</h3>
+                        <p class="stat-label">Années d'Expérience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-container">
+            <h2 class="section-title">Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript / TypeScript</li>
+                        <li>React / Vue.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js / Express</li>
+                        <li>Bases de Données</li>
+                        <li>REST APIs</li>
+                        <li>Authentification</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <ul class="skill-list">
+                        <li>UI/UX Design</li>
+                        <li>Figma / Adobe</li>
+                        <li>Prototypage</li>
+                        <li>Brand Identity</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Outils & DevOps</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <h2 class="section-title">Projets Récents</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Moderne</h3>
+                        <p>Plateforme de vente en ligne avec panier dynamique et système de paiement intégré.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="project-content">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Application de visualisation de données en temps réel avec graphiques interactifs.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="project-content">
+                        <h3>Réseau Social</h3>
+                        <p>Plateforme communautaire avec système de notifications et messagerie en temps réel.</p>
+                        <div class="project-tags">
+                            <span class="tag">Firebase</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Passons à l'Action</h2>
+            <div class="contact-content">
+                <p class="contact-description">Vous avez un projet en tête ? Parlons-en !</p>
+                <div class="contact-methods">
+                    <a href="mailto:fandrbh@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>fandrbh@gmail.com</p>
+                    </a>
+                    <a href="https://github.com/blackFF7" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>@blackFF7</p>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Mon Profil</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Blackzen. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projet">
+            <div class="listP">
+                <div class="P1">
+                    <h4>Titre projet</h4>
+                    <div class="descripionP">
+                        <ul>
+                            <li class="dP">Lorem, ipsum dolor.</li>
+                            <li class="dP">Lorem, ipsum dolor.</li>
+                            <li class="dP">Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="P1">
+                    <h4>Titre projet</h4>
+                    <div class="descripionP">
+                        <ul>
+                            <li class="dP">Lorem, ipsum dolor.</li>
+                            <li class="dP">Lorem, ipsum dolor.</li>
+                            <li class="dP">Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="P1">
+                    <h4>Titre projet</h4>
+                    <div class="descripionP">
+                        <ul>
+                            <li class="dP">Lorem, ipsum dolor.</li>
+                            <li class="dP">Lorem, ipsum dolor.</li>
+                            <li class="dP">Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="listCon">
+                <div class="Con1">
+                    <h4><span></span>Phone</h4>
+                    <h3>038 25 595 56</h3>
+                </div>
+                <div class="Con1">
+                    <h4><span></span>Twitter</h4>
+                    <h3>Lorem, ipsum.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+
+    <script src="script/index.js" defer></script>
 </body>
 </html>
